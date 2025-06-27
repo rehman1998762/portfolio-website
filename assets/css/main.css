@@ -1465,6 +1465,7 @@ section,
 .resume .resume-side .contact-info li {
   margin-bottom: 1rem;
   color: var(--default-color);
+      font-size: 13px;
 }
 
 .resume .resume-side .contact-info li i {
