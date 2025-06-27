@@ -910,7 +910,12 @@ section,
     margin-bottom: 3rem;
   }
 }
+@media (max-width: 420px) {
+  .about .contact-links .contact-item {
+        font-size: 13px;
 
+  }
+}
 .about .profile-header {
   position: relative;
   margin-bottom: 2rem;
