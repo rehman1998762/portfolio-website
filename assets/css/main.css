@@ -973,15 +973,24 @@ section,
 .about .contact-links .contact-item {
   display: flex;
   align-items: center;
-  gap:  10px;
-  padding:  10px;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
   background-color: color-mix(in srgb, var(--surface-color), var(--background-color) 50%);
   border-radius: 0.75rem;
   text-decoration: none;
   color: var(--default-color);
   transition: all 0.3s;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  
+  /* ✅ Added for responsive fix */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
+
 
 .about .contact-links .contact-item:hover {
   background-color: var(--accent-color);
